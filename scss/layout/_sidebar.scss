@@ -1,0 +1,8 @@
+$sidebar-width: 280px;
+
+.app-sidebar {
+  width: $sidebar-width;
+  height: 100vh;
+  background-color: $background-light;
+  box-shadow: $shadow-default;
+}

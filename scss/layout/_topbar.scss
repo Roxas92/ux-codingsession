@@ -1,0 +1,9 @@
+$topbar-height: 70px;
+
+.app-topbar {
+  position: fixed;
+  height: $topbar-height;
+  width: 100vw;
+  background: $background-default;
+  box-shadow: $shadow-default;
+}
