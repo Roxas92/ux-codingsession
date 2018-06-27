@@ -1,3 +1,13 @@
 .main {
   background: $background-app;
+  min-height: 100vh;
+
+  &.has-sidebar {
+    padding-left: $sidebar-width;
+  }
+
+  &.has-topbar {
+    padding-top: $topbar-height;
+  }
+
 }

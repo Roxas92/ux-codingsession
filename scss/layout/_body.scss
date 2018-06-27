@@ -1,0 +1,8 @@
+$appbody-width: 1140px;
+
+.app-body {
+  max-width: $appbody-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: $gap-xlarge;
+}

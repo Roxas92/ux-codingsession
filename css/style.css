@@ -35,20 +35,75 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+button {
+  background: transparent;
+  border: 0;
+  outline: 0; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #28282D;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+.icon {
+  width: 32px;
+  height: 32px;
+  background-color: #94b5ec;
+  border: 1px solid #5488e1;
+  border-radius: 50%; }
+
 .main {
-  background: #E3E8F2; }
+  background: #E3E8F2;
+  min-height: 100vh; }
+  .main.has-sidebar {
+    padding-left: 280px; }
+  .main.has-topbar {
+    padding-top: 70px; }
 
 .app-topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
+  left: 0;
+  right: 0;
   height: 70px;
-  width: 100vw;
-  background: #ffffff;
+  background-color: #ffffff;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  z-index: 200; }
+  .app-topbar .topbar-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    .app-topbar .topbar-item.is-left {
+      margin-right: auto; }
+    .app-topbar .topbar-item.is-right {
+      margin-left: auto; }
+  .app-topbar .logo {
+    width: 136px;
+    height: 32px; }
 
 .app-sidebar {
+  position: fixed;
   width: 280px;
   height: 100vh;
   background-color: #F9FBFE;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100; }
+
+.app-body {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem; }

@@ -1,9 +1,30 @@
-$topbar-height: 70px;
-
 .app-topbar {
+  display: flex;
   position: fixed;
+  left: 0;
+  right: 0;
   height: $topbar-height;
-  width: 100vw;
-  background: $background-default;
+  background-color: $background-default;
   box-shadow: $shadow-default;
+  z-index: 200;
+
+  .topbar-item {
+    display: flex;
+    align-items: center;
+    padding-left: $gap-xmedium;
+    padding-right: $gap-xmedium;
+
+    &.is-left {
+      margin-right: auto;
+    }
+
+    &.is-right {
+      margin-left: auto;
+    }
+  }
+
+  .logo {
+    width: 136px;
+    height: 32px;
+  }
 }

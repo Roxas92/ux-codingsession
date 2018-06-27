@@ -1,8 +1,11 @@
 // GLOBAL
 @import "global/reset";
+@import "global/mixins";
 @import "global/variables";
+@import "global/general";
 
 // COMPONENT
+@import "component/icon";
 
 // LAYOUT
 @import "layout/general";

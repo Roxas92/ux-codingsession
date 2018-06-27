@@ -1,8 +1,8 @@
-$sidebar-width: 280px;
-
 .app-sidebar {
+  position: fixed;
   width: $sidebar-width;
   height: 100vh;
   background-color: $background-light;
   box-shadow: $shadow-default;
+  z-index: 100;
 }
