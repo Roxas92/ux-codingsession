@@ -4,6 +4,7 @@ $font-primary: 'Lato', sans-serif;
 // colors
 $color-white: #ffffff;
 $color-black: #28282D;
+$color-black-ll: tint($color-black, 50);
 
 $color-primary: #296AD9;
 $color-primary-l:  tint($color-primary, 50);
@@ -44,6 +45,14 @@ $gap-xmedium: 2rem; // 32
 $gap-large: 3rem; // 48
 $gap-xlarge: 4rem; // 64
 $gap-xxlarge: 6rem; // 96
+
+// misc
+$borderRadius-default: 4px;
+
+// Transitions
+$transition-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+$transition-smooth: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+$transition-default: all 375ms $transition-smooth;
 
 // body settings
 $body-font: $font-primary;

@@ -8,11 +8,15 @@
 @import "component/icon";
 @import "component/title";
 @import "component/input";
+@import "component/counter";
 
 // LAYOUT
 @import "layout/general";
 @import "layout/topbar";
 @import "layout/sidebar";
 @import "layout/body";
+
+// SECTIONS
+@import "sections/general";
 
 // PAGES

@@ -64,11 +64,35 @@ body {
   letter-spacing: .5px; }
 
 .input {
+  font-family: "Lato", sans-serif;
   border-radius: 4px;
   background-color: #ffffff;
   border: 1px solid #E3E8F2;
   padding: 0 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   height: 32px; }
+  .input.is-fullwidth {
+    width: 100%; }
+
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 21px;
+  min-width: 21px;
+  background-color: #d4e1f7;
+  border: 1px solid #94b5ec;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #296AD9; }
 
 .main {
   background: #E3E8F2;
@@ -149,9 +173,52 @@ body {
     padding-top: 4rem;
     padding-left: 2rem;
     padding-right: 2rem; }
+    .app-sidebar .sidebar-menu .menu-title {
+      margin-bottom: 1.5rem; }
+    .app-sidebar .sidebar-menu .menu {
+      margin-top: 1.5rem; }
+      .app-sidebar .sidebar-menu .menu .menu-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .app-sidebar .sidebar-menu .menu .menu-item:not(:last-child) {
+          margin-bottom: 1rem; }
+        .app-sidebar .sidebar-menu .menu .menu-item a {
+          display: block;
+          color: #28282D;
+          font-weight: 300;
+          text-decoration: none;
+          position: relative;
+          padding: 0.5rem;
+          border-radius: 4px;
+          border: 1px solid transparent;
+          -webkit-transition: all 375ms cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: all 375ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+          .app-sidebar .sidebar-menu .menu .menu-item a:hover {
+            border-color: #94b5ec;
+            background-color: #d4e1f7; }
+          .app-sidebar .sidebar-menu .menu .menu-item a:before {
+            content: '# ';
+            color: #949496; }
+        .app-sidebar .sidebar-menu .menu .menu-item .counter {
+          margin-left: 0.25rem; }
 
 .app-body {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   padding: 4rem; }
+
+.section:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.section.is-boxed {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); }

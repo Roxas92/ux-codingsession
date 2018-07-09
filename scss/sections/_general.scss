@@ -1,0 +1,10 @@
+.section {
+  &:not(:last-child) {
+    margin-bottom: $gap-xmedium;
+  }
+
+  &.is-boxed {
+    background-color: $color-white;
+    box-shadow: $shadow-default;
+  }
+}
