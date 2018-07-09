@@ -52,17 +52,33 @@ body {
 .icon {
   width: 32px;
   height: 32px;
-  background-color: #94b5ec;
-  border: 1px solid #5488e1;
-  border-radius: 50%; }
+  background-color: #d4e1f7;
+  border: 1px solid #94b5ec;
+  border-radius: 50%;
+  color: #296AD9; }
+
+.title-caps {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .5px; }
+
+.input {
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: 1px solid #E3E8F2;
+  padding: 0 1rem;
+  height: 32px; }
 
 .main {
   background: #E3E8F2;
   min-height: 100vh; }
-  .main.has-sidebar {
-    padding-left: 280px; }
-  .main.has-topbar {
-    padding-top: 70px; }
+
+.has-sidebar .main {
+  padding-left: 280px; }
+
+.has-topbar .main {
+  padding-top: 70px; }
 
 .app-topbar {
   display: -webkit-box;
@@ -89,9 +105,37 @@ body {
       margin-right: auto; }
     .app-topbar .topbar-item.is-right {
       margin-left: auto; }
+  .app-topbar .topbar-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .app-topbar .topbar-menu .menu-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .app-topbar .topbar-menu .menu-item:not(:last-child) {
+        margin-right: 1.5rem; }
+      .app-topbar .topbar-menu .menu-item .profile-picture {
+        width: 32px;
+        height: 32px;
+        background-color: #d4e1f7;
+        border: 1px solid #94b5ec;
+        border-radius: 50%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-right: 0.75rem; }
+      .app-topbar .topbar-menu .menu-item .profile-name {
+        font-size: 0.875rem;
+        font-weight: 700; }
   .app-topbar .logo {
     width: 136px;
     height: 32px; }
+
+.has-topbar .app-sidebar {
+  padding-top: 70px; }
 
 .app-sidebar {
   position: fixed;
@@ -101,6 +145,10 @@ body {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   z-index: 100; }
+  .app-sidebar .sidebar-menu {
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
 
 .app-body {
   max-width: 1140px;

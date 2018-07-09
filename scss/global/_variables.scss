@@ -6,8 +6,8 @@ $color-white: #ffffff;
 $color-black: #28282D;
 
 $color-primary: #296AD9;
-$color-primary-l:  tint($color-primary, 20);
-$color-primary-ll: tint($color-primary, 50);
+$color-primary-l:  tint($color-primary, 50);
+$color-primary-ll: tint($color-primary, 80);
 
 $background-default: $color-white;
 $background-light: #F9FBFE;
@@ -35,8 +35,9 @@ $lineHeight-small: 1.1;
 $lineHeight-medium: 1.5;
 
 // paddings & margins
-$gap-xxsmall: 0.25rem; // 4
-$gap-xsmall: 0.5rem; // 8
+$gap-xxxsmall: 0.25rem; // 4
+$gap-xxsmall: 0.5rem; // 8
+$gap-xsmall: 0.75rem; // 12
 $gap-small: 1rem; // 16
 $gap-medium: 1.5rem; // 24
 $gap-xmedium: 2rem; // 32

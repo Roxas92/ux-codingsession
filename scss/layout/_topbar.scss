@@ -23,6 +23,34 @@
     }
   }
 
+  .topbar-menu {
+    display: flex;
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-right: $gap-medium;
+      }
+
+      .profile-picture {
+        width: 32px;
+        height: 32px;
+        background-color: $color-primary-ll;
+        border: 1px solid $color-primary-l;
+        border-radius: 50%;
+        box-sizing: border-box;
+        margin-right: $gap-xsmall;
+      }
+
+      .profile-name {
+        font-size: $size-6;
+        font-weight: 700;
+      }
+    }
+  }
+
   .logo {
     width: 136px;
     height: 32px;

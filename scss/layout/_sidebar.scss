@@ -1,3 +1,9 @@
+.has-topbar {
+  .app-sidebar {
+    padding-top: $topbar-height;
+  }
+}
+
 .app-sidebar {
   position: fixed;
   width: $sidebar-width;
@@ -5,4 +11,10 @@
   background-color: $background-light;
   box-shadow: $shadow-default;
   z-index: 100;
+
+  .sidebar-menu {
+    padding-top: $gap-xlarge;
+    padding-left: $gap-xmedium;
+    padding-right: $gap-xmedium;
+  }
 }
