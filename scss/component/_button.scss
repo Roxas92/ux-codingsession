@@ -1,0 +1,15 @@
+.button {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    color: $color-white;
+    font-weight: 700;
+    background-color: $color-primary;
+    border-radius: $borderRadius-default;
+    padding-left: $gap-xsmall;
+    padding-right: $gap-xsmall;
+
+    &.has-icon-left .icon {
+        margin-right: $gap-xsmall;
+    }
+}

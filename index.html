@@ -1,63 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body class="has-topbar has-sidebar">
 
   <div class="app-topbar">
     <div class="topbar-item is-left">
       <img class="logo" src="assets/logo.svg" />
-    </div><!-- /.topbar-left -->
+    </div>
+    <!-- /.topbar-left -->
     <div class="topbar-item is-right">
       <div class="topbar-menu">
         <div class="menu-item">
-          <button class="icon"><i class="fas fa-bell"></i></button>
+          <button class="icon">
+            <i class="fas fa-bell"></i>
+          </button>
         </div>
         <div class="menu-item">
           <div class="profile-picture"></div>
           <div class="profile-name">Fabian Saur</div>
         </div>
-      </div><!-- /.topbar-menu -->
-    </div><!-- /.topbar-right -->
-  </div><!-- /.app-topbar -->
+      </div>
+      <!-- /.topbar-menu -->
+    </div>
+    <!-- /.topbar-right -->
+  </div>
+  <!-- /.app-topbar -->
 
   <div class="app-sidebar">
     <div class="sidebar-menu">
-      <div class="menu-title title-caps">Projects</div><!-- /.menu-title -->
+      <div class="menu-title title-caps">Projects</div>
+      <!-- /.menu-title -->
       <input type="text" class="input is-search is-fullwidth" placeholder="Search">
       <ul class="menu">
-        <li class="menu-item"><a href="">aa-shop24.de</a></li>
-        <li class="menu-item"><a href="">aa-shop24.de</a> <div class="counter">12</div></li>
-        <li class="menu-item"><a href="">advance52 appProtect</a></li>
-        <li class="menu-item"><a href="">AF Marcotec GmbH</a></li>
-        <li class="menu-item"><a href="">GieseckeDevrient</a></li>
-        <li class="menu-item"><a href="">LocalUp</a></li>
-        <li class="menu-item"><a href="">Roast Market GmbH</a> <div class="counter">35</div></li>
-        <li class="menu-item"><a href="">sunlab.de</a></li>
-      </ul><!-- /.menu -->
-    </div><!-- /.sidebar-menu -->
-  </div><!-- /.app-sidebar -->
+        <li class="menu-item">
+          <a href="">aa-shop24.de</a>
+        </li>
+        <li class="menu-item">
+          <a href="">aa-shop24.de</a>
+          <div class="counter">12</div>
+        </li>
+        <li class="menu-item">
+          <a href="">advance52 appProtect</a>
+        </li>
+        <li class="menu-item">
+          <a href="">AF Marcotec GmbH</a>
+        </li>
+        <li class="menu-item">
+          <a href="">GieseckeDevrient</a>
+        </li>
+        <li class="menu-item">
+          <a href="">LocalUp</a>
+        </li>
+        <li class="menu-item">
+          <a href="">Roast Market GmbH</a>
+          <div class="counter">35</div>
+        </li>
+        <li class="menu-item">
+          <a href="">sunlab.de</a>
+        </li>
+      </ul>
+      <!-- /.menu -->
+    </div>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.app-sidebar -->
 
   <main class="main">
 
     <div class="app-body">
 
       <section class="section section-title">
-        <h1 class="pagetitle">LocalUp</h1>
-      </section><!-- /.section -->
-      <section class="section section-input is-boxed">asdfasdf</section><!-- /.section -->
-      <section class="section section-summary is-boxed">afdgsdfg</section><!-- /.section -->
+        <div class="section-body">
+          <h1 class="pagetitle">LocalUp</h1>
+          <div class="controls">
+            <a href="" class="control-item">
+              <div class="icon is-small">
+                <i class="far fa-chart-line"></i>
+              </div>
+              <span class="label">Statistiken anzeigen</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- /.section -->
+      <section class="section section-beat is-boxed">
+        <div class="section-body">
+          <textarea class="beat-input" placeholder="Write a beat..."></textarea>
+        </div>
+        <div class="section-footer">
+          <div class="footer-item is-left">
+            <div class="beat-control">
+              <div class="control-label">I've spent</div>
+              <div class="controls"></div>
+            </div>
+            <div class="beat-control">
+              <div class="control-label">Category</div>
+              <div class="controls"></div>
+            </div>
+          </div>
+          <div class="footer-item is-right">
+            <button class="button has-icon has-icon-left">
+              <div class="icon"><i class="fal fa-heartbeat"></i></div>
+              Drop the beat
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- /.section -->
+      <section class="section section-summary is-boxed">afdgsdfg</section>
+      <!-- /.section -->
 
-    </div><!-- /.app-body -->
+    </div>
+    <!-- /.app-body -->
 
-  </main><!-- /.main -->
+  </main>
+  <!-- /.main -->
 
 </body>
+
 </html>

@@ -1,0 +1,14 @@
+.control-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    .label {
+        color: $color-black;
+        font-size: $size-6;
+    }
+
+    .icon ~ .label {
+        margin-left: $gap-xsmall;
+    }
+}

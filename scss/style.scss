@@ -9,6 +9,8 @@
 @import "component/title";
 @import "component/input";
 @import "component/counter";
+@import "component/controlitem";
+@import "component/button";
 
 // LAYOUT
 @import "layout/general";
@@ -18,5 +20,6 @@
 
 // SECTIONS
 @import "sections/general";
+@import "sections/beat";
 
 // PAGES

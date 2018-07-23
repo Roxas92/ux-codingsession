@@ -1,0 +1,12 @@
+.section.section-beat {
+    .beat-input {
+        font-family: $font-primary;
+        font-size: $size-5;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: $gap-medium;
+        border: 0;
+    }
+}
