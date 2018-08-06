@@ -102,11 +102,37 @@
           <div class="footer-item is-left">
             <div class="beat-control">
               <div class="control-label">I've spent</div>
-              <div class="controls"></div>
+              <div class="controls">
+                <div class="time-wrapper">
+                  <input type="time" value="00:00">
+                  <div class="time-label">HH:MM</div>
+                </div>
+                <div class="time-controls">
+                  <button class="control-item">-1h</button>
+                  <button class="control-item">+1h</button>
+                  <button class="control-item">-15m</button>
+                  <button class="control-item">+15m</button>
+                </div>
+              </div>
             </div>
             <div class="beat-control">
               <div class="control-label">Category</div>
-              <div class="controls"></div>
+              <div class="controls">
+                <input type="radio" id="category-seo" name="category" class="radio has-label" >
+                <label for="category-seo" class="radio-label"><span class="dot is-seo"></span>SEO</label>
+
+                <input type="radio" id="category-sea" name="category" class="radio has-label" checked>
+                <label for="category-sea" class="radio-label"><span class="dot is-sea"></span>SEA</label>
+
+                <input type="radio" id="category-social" name="category" class="radio has-label">
+                <label for="category-social" class="radio-label"><span class="dot is-social"></span>Social</label>
+
+                <input type="radio" id="category-analytics" name="category" class="radio has-label">
+                <label for="category-analytics" class="radio-label"><span class="dot is-analytics"></span>Analytics</label>
+
+                <input type="radio" id="category-code" name="category" class="radio has-label">
+                <label for="category-code" class="radio-label"><span class="dot is-code"></span>Code</label>
+              </div>
             </div>
           </div>
           <div class="footer-item is-right">

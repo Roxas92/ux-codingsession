@@ -1,13 +1,75 @@
 .input {
-  font-family: $body-font;
-  border-radius: $borderRadius-default;
-  background-color: $color-white;
-  border: 1px solid $background-app;
-  padding: 0 $gap-small;
-  box-sizing: border-box;
-  height: 32px;
+	font-family: $body-font;
+	border-radius: $borderRadius-default;
+	background-color: $color-white;
+	border: 1px solid $background-app;
+	padding: 0 $gap-small;
+	box-sizing: border-box;
+	height: 32px;
 
-  &.is-fullwidth {
-    width: 100%;
+	&.is-fullwidth {
+		width: 100%;
+	}
+}
+
+// RADIO
+
+.radio.has-label {
+	display: none;
+
+	&:checked + .radio-label {
+		background-color: $color-primary-ll;
+		border-color: $color-primary-l;
+	}
+}
+
+.radio-label {
+	display: flex;
+	align-items: center;
+	height: 32px;
+	border: 1px solid transparent;
+	border-radius: $borderRadius-default;
+	font-size: $size-6;
+	padding-left: $gap-xsmall;
+	padding-right: $gap-xsmall;
+	cursor: pointer;
+}
+
+// TIME
+.time-wrapper {
+	display: flex;
+	align-items: center;
+	border: 1px solid $color-secondary;
+	padding-left: $gap-small;
+	padding-right: $gap-small;
+	border-radius: $borderRadius-default;
+	height: 40px;
+
+	input[type="time"] {
+		border: 0;
+		font-family: $font-primary;
+		font-size: $size-2;
+    font-weight: 700;
+    
+    &:focus {
+      outline: 0;
+    }
+
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+    }
+    
+    &::-webkit-clear-button {
+      display: none;
+    }
+  }
+  
+  .time-label {
+    margin-left: $gap-xsmall;
+    font-size: $size-7;
+    font-weight: 700;
+    color: $color-black-lll;
   }
 }

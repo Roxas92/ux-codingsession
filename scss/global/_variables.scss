@@ -5,10 +5,18 @@ $font-primary: 'Lato', sans-serif;
 $color-white: #ffffff;
 $color-black: #28282D;
 $color-black-ll: tint($color-black, 50);
+$color-black-lll: tint($color-black, 40);
 
 $color-primary: #296AD9;
 $color-primary-l:  tint($color-primary, 50);
 $color-primary-ll: tint($color-primary, 80);
+$color-primary-lll: tint($color-primary, 90);
+
+$color-seo: #FF5046;
+$color-sea: $color-primary;
+$color-social: #29D97B;
+$color-analytics: #FF882F;
+$color-code: #FF2FA0;
 
 $color-secondary: #E3E8F2;
 
