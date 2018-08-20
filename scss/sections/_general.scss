@@ -26,6 +26,25 @@
 		}
 	}
 
+	&.section-summary {
+		.section-body {
+		}
+	}
+
+	.section-header {
+		background-color: #F9FBFE;
+		padding: $gap-small;
+		border-bottom: 1px solid #E3E8F2;
+		align-items: center;
+
+		@include Items();
+
+		.section-title {
+			font-size: $size-4;
+			font-weight: 700;
+		}
+	}
+
 	.section-footer {
 		border-top: 1px solid $color-secondary;
 		display: flex;

@@ -1,27 +1,27 @@
 // fonts
-$font-primary: 'Lato', sans-serif;
+$font-primary: "Lato", sans-serif;
 
 // colors
 $color-white: #ffffff;
-$color-black: #28282D;
+$color-black: #28282d;
 $color-black-ll: tint($color-black, 50);
 $color-black-lll: tint($color-black, 40);
 
-$color-primary: #296AD9;
-$color-primary-l:  tint($color-primary, 50);
+$color-primary: #296ad9;
+$color-primary-l: tint($color-primary, 50);
 $color-primary-ll: tint($color-primary, 80);
 $color-primary-lll: tint($color-primary, 90);
 
-$color-seo: #FF5046;
+$color-seo: #ff5046;
 $color-sea: $color-primary;
-$color-social: #29D97B;
-$color-analytics: #FF882F;
-$color-code: #FF2FA0;
+$color-social: #29d97b;
+$color-analytics: #ff882f;
+$color-code: #ff2fa0;
 
-$color-secondary: #E3E8F2;
+$color-secondary: #e3e8f2;
 
 $background-default: $color-white;
-$background-light: #F9FBFE;
+$background-light: #f9fbfe;
 $background-app: $color-secondary;
 
 // shadows
@@ -61,7 +61,7 @@ $borderRadius-default: 4px;
 
 // Transitions
 $transition-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-$transition-smooth: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+$transition-smooth: cubic-bezier(0.215, 0.61, 0.355, 1);
 $transition-default: all 375ms $transition-smooth;
 
 // body settings

@@ -1,0 +1,38 @@
+.beats-list {
+	.beat-item {
+		padding: $gap-medium;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid #e3e8f2;
+		}
+	}
+
+	.beat-header {
+		display: flex;
+		margin-bottom: $gap-small;
+	}
+
+	.beat-body {
+		margin-bottom: $gap-small;
+    }
+
+    .beat-footer {
+        display: flex;
+    }
+
+	.user-avatar {
+		width: 32px;
+		height: 32px;
+		border: 1px solid #dfe5ec;
+		border-radius: 50%;
+		margin-right: $gap-xsmall;
+	}
+
+	.user-name {
+		font-weight: 700;
+	}
+
+	.beat-meta {
+		display: flex;
+	}
+}

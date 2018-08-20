@@ -1,5 +1,4 @@
 .app-topbar {
-  display: flex;
   position: fixed;
   left: 0;
   right: 0;
@@ -8,19 +7,13 @@
   box-shadow: $shadow-default;
   z-index: 200;
 
+  @include Items();
+
   .topbar-item {
     display: flex;
     align-items: center;
     padding-left: $gap-xmedium;
     padding-right: $gap-xmedium;
-
-    &.is-left {
-      margin-right: auto;
-    }
-
-    &.is-right {
-      margin-left: auto;
-    }
   }
 
   .topbar-menu {
