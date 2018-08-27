@@ -1,15 +1,34 @@
 .button {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    color: $color-white;
-    font-weight: 700;
-    background-color: $color-primary;
-    border-radius: $borderRadius-default;
-    padding-left: $gap-xsmall;
-    padding-right: $gap-xsmall;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	font-weight: 700;
+	border-radius: $borderRadius-default;
+	padding-left: $gap-xsmall;
+	padding-right: $gap-xsmall;
+	cursor: pointer;
 
-    &.has-icon-left .icon {
-        margin-right: $gap-xsmall;
-    }
+	&:not(.is-invert) {
+		background-color: $color-primary;
+		color: $color-white;
+	}
+
+	&.is-invert {
+		.icon {
+			color: $color-primary;
+			background-color: $color-primary-lll;
+		}
+	}
+
+	&.is-danger {
+		.icon {
+			color: $color-danger;
+            background-color: tint($color-danger, 80);
+            border-color: tint($color-danger, 60);
+		}
+	}
+
+	&.has-icon-left .icon {
+		margin-right: $gap-xsmall;
+	}
 }
